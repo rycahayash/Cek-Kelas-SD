@@ -139,20 +139,29 @@ width: 50%;
   right: 20px;
 }
 
-/* Ubah posisi awan secara acak */
 .cloud:nth-child(1) {
-  top: 50px;
-  left: 100px;
+  top: 100px;
+  left: 10%;
 }
 
 .cloud:nth-child(2) {
-  top: 50px;
-  right: 100px;
+  top: -20px;
+  left: 30%;
 }
 
 .cloud:nth-child(3) {
-  top: 20px;
-  left: 0px;
+  top: -200px;
+  left: 50%;
+}
+
+.cloud:nth-child(4) {
+  top: -180px;
+  left: 70%;
+}
+
+.cloud:nth-child(5) {
+  top: -150px;
+  left: 70%;
 }
 
 @media (max-width: 576px) {
@@ -177,6 +186,27 @@ width: 50%;
   .card{
     width: 100%;
   }
+  .cloud {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .cloud:nth-child(1) {
+    left: 70px;
+  }
+  
+  .cloud:nth-child(2) {
+    left: -50px;
+  }
+  
+  .cloud:nth-child(3) {
+    left: -200px;
+  }
+  
+  .cloud:nth-child(4) {
+    left: -300px;
+  }
+  
   .body-shape {
     width: 150px; /* Ukuran lingkaran pada tampilan layar kecil */
     height: 150px;
@@ -206,7 +236,11 @@ width: 50%;
   0% {
     transform: translateX(-100%);
   }
+  90% {
+    transform: translateX(100%);
+  }
   100% {
+    opacity: 0;
     transform: translateX(100%);
   }
 }
