@@ -219,6 +219,9 @@ width: 50%;
     /* Properti shape untuk resolusi di bawah 576px */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
+  img {
+    width: 150px;
+  }
 }
 
 @keyframes fade-in {
